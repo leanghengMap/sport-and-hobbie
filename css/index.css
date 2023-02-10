@@ -267,25 +267,27 @@ p {
 .container .page5 {
   width: 100%;
   height: 700px;
-  background-image: url("./../img/1.webp");
+  background-image: url("./../img/page5.jfif");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
-.container .page5 .p {
+.container .page5 .private {
   width: 800px;
   height: 300px;
   /* border: 1px solid red; */
   margin-left: 50px;
-  padding: 70px;
+  padding: 150px 0px 150px;
+  margin: auto;
+  
 }
-.container .page5 .p h3 {
+.container .page5 .private h3 {
   color: white;
   font-size: 30px;
   font-family: "Times New Roman", Times, serif;
+  text-align: center;
 }
-.container .page5 .p p,
-h3 {
+.container .page5 .private p{
   color: white;
   font-size: 30px;
   font-family: "Times New Roman", Times, serif;
