@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("./card.css");
+@import url("./blogs.css");
 
 * {
   padding: 0%;
@@ -11,37 +12,40 @@ header {
   width: 100%;
   height: 60px;
   display: flex;
+  background: #7a9fbf;
+  position: fixed;
+  z-index: 99;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
 }
 header .menu {
   width: 80%;
   height: 60px;
   display: flex;
   margin: auto;
-  border-bottom: 2px solid black;
   justify-content: space-between;
 }
 header .menu .logo {
-  padding: 20px 50px 20px 50px;
+  font-family: lucida handwriting;
+  font-size: 38px;
+  font-weight: 600;
+  color: White;
+  align-self: center;
 }
 header .menu ul {
   display: flex;
   align-items: center;
-  margin-left: 50px;
-  align-items: center;
   text-transform: uppercase;
+  gap: 60px;
 }
 header .menu ul li {
   list-style-type: none;
-  padding: 17px 30px 17px 30px;
 }
 header .menu ul li a {
   text-decoration: none;
   font-size: 16px;
   font-weight: 500;
-
-  color: #3f009e;
-
   display: block;
+  color: white;
 }
 header .menu .research {
   /* border: 1px solid red; */
@@ -54,9 +58,10 @@ header .menu ul li .fa-solid {
   margin-right: 5px;
 }
 .sport {
-  color: #3f009e;
   padding: 16px;
   font-weight: 500;
+  font-size: 16px;
+  color: white;
 }
 
 .dropdown {
@@ -67,7 +72,7 @@ header .menu ul li .fa-solid {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: #7a9fbf;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
@@ -81,16 +86,16 @@ header .menu ul li .fa-solid {
 }
 
 .dropdown-content a:hover {
-  background-color: #f1f1f1;
+  background-color: #6f7302;
 }
 
 .dropdown:hover .dropdown-content {
   display: block;
+  color: #444444;
 }
 
 .dropdown:hover .dropbtn {
   background-color: #458efe;
-  color: white;
 }
 .container {
   width: 100%;
@@ -111,7 +116,27 @@ header .menu ul li .fa-solid {
 .container .banner .text {
   color: white;
   font-weight: 600;
-  font-size: 36px;
+  font-size: 32px;
+}
+h1 {
+  font-size: 32px;
+}
+h1 {
+  font-size: 32px;
+}
+h2 {
+  font-size: 24px;
+}
+h6 {
+  font-size: 12px;
+}
+p {
+  font-size: 14px;
+}
+h1,
+h2,
+p {
+  color: #444444;
 }
 .grid-container {
   display: flex;
@@ -120,21 +145,23 @@ header .menu ul li .fa-solid {
   justify-content: center;
 }
 .grid-item {
-  width: 300px;
-  height: 310px;
+  width: 33%;
   color: black;
 }
-.card,
-.card_content {
-  width: 300px;
+.card {
+  width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  height: full;
+  gap: 1%;
+  height: 380px;
 }
 .card_content {
-  padding: 0 20px;
-  padding-bottom: 20px;
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 380px;
 }
 .cardImg {
   background: pink;
@@ -150,6 +177,5 @@ header .menu ul li .fa-solid {
 section {
   width: 80%;
   margin: auto;
-  
-  
+  margin-bottom: 30px;
 }
