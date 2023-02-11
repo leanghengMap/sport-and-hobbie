@@ -1,43 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("./card.css");
+
 * {
   padding: 0%;
   margin: 0%;
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 header {
   width: 100%;
   height: 60px;
-  /* background-color:bisque; */
   display: flex;
-  /* border-bottom: 2px solid black; */
 }
 header .menu {
   width: 80%;
   height: 60px;
-  /* background-color: blueviolet; */
   display: flex;
   margin: auto;
   border-bottom: 2px solid black;
+  justify-content: space-between;
 }
 header .menu .logo {
-  /* border: 1px solid red; */
   padding: 20px 50px 20px 50px;
 }
 header .menu ul {
   display: flex;
   align-items: center;
-  /* border: 1px solid red; */
   margin-left: 50px;
+  align-items: center;
+  text-transform: uppercase;
 }
 header .menu ul li {
   list-style-type: none;
-  /* border:1px solid red; */
   padding: 17px 30px 17px 30px;
 }
 header .menu ul li a {
   text-decoration: none;
-  font-size: 20px;
-  font-family: "Times New Roman", Times, serif;
-  color: #3F009E;
+  font-size: 16px;
+  font-weight: 500;
+
+  color: #3f009e;
 
   display: block;
 }
@@ -51,260 +53,103 @@ header .menu .research a {
 header .menu ul li .fa-solid {
   margin-right: 5px;
 }
-header .menu ul li .item-sports {
-  width: 200px;
-  height: 230px;
-  background-color: antiquewhite;
-  transition: all 0.4s ease;
-  box-sizing: border-box;
+.sport {
+  color: #3f009e;
+  padding: 16px;
+  font-weight: 500;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
   display: none;
   position: absolute;
-  top: 60px;
-  left: 430px;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
 }
-header .menu ul li .item-sports a {
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
   display: block;
-  padding: 10px 10px;
-  font-size: 18px;
-  cursor: pointer;
-  text-align: center;
 }
-header .menu ul li:hover .item-sports {
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
   display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #458efe;
+  color: white;
 }
 .container {
   width: 100%;
-  height: auto;
+  padding-bottom: 40px;
 }
-.container .main {
+.container .banner {
   height: 700px;
   background-image: url("./../img/hiking-safety.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
   color: White;
-}
-.container h1,
-p {
-  text-align: center;
-}
-.container h1 {
-  color: #458efe;
-}
-/* .container .button{
-    width: 100%;
-    margin: auto;
-} */
-.container .button input {
-  background-color: #4caf50;
-  border-radius: 5px;
-  color: white;
-  padding: 10px 40px;
-  text-align: center;
-  font-size: 16px;
-  margin-left: 30px;
-  margin-top: 60px;
-}
-.container .box {
-  width: 100%;
-  height: auto;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-}
-.container .box .box1 {
-  width: 150px;
-  height: 100px;
-  background-color: brown;
-  margin-top: 130px;
-  margin-right: 130px;
-}
-.container .box .box1 .fa-solid {
-  font-size: 50px;
-  padding: 25px 45px;
-}
-.container .boxh3 {
-  width: 100%;
-  height: 100px;
-}
-.container h3 {
-  padding: 30px;
-  text-align: center;
-  color: black;
-  font-size: 30px;
-  font-family: "Times New Roman", Times, serif;
-}
-.container .discover {
-  width: 80%;
-  height: 1030px;
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: 250px;
-}
-.container .discover .items {
-  width: 300px;
-  height: 500px;
-  background-color: blueviolet;
-  margin-right: 50px;
-  margin-bottom: 30px;
-}
-.container .discover .items .title {
-  width: 100%;
-  height: 50px;
-  font-family: "Times New Roman", Times, serif;
-  font-size: 20px;
-  text-align: center;
-  padding: 12px;
-  background-color: antiquewhite;
-}
-.container .discover .items .pic {
-  width: 100%;
-  height: 250px;
-}
-.container .discover .items .pic img {
-  width: 100%;
-  height: 250px;
-}
-.container .discover .items .paragraph {
-  width: 100%;
-  height: 80px;
-}
-/* iframe{
-    width: 95%;
-    height:550px;
-    margin-left: 40px;
-} */
-
-.container .page1 {
-  width: 80%;
-  height: 780px;
-  /* background-color:#42564B; */
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
-}
-.container .page1 .columns1 {
-  width: 30%;
-  height: 780px;
-  /* background-color: aqua; */
-}
-.container .page1 .columns1 .above {
-  width: 100%;
-  height: 350px;
-  /* background-color: blue; */
-  /* margin-bottom: 30px; */
-  /* border: 1px solid red; */
-}
-.container .page1 .columns1 .above p {
-  font-size: 20px;
-  font-family: "Times New Roman", Times, serif;
-  padding: 60px;
-}
-.container .page1 .columns1 .below {
-  width: 100%;
-  height: 400px;
-  /* background-color: rgb(104, 104, 238);
-    border: 1px solid red; */
-}
-.container .page1 .columns1 .below img {
-  width: 100%;
-  height: 400px;
-}
-.container .page1 .columns2 {
-  width: 30%;
-  height: 500px;
-  /* background-color: aqua; */
-  margin-top: 140px;
-}
-.container .page1 .columns2 h2 {
-  font-size: 30px;
-  font-family: "Times New Roman", Times, serif;
-  text-align: center;
-  padding: 20px 0px;
-}
-.container .page1 .columns2 img {
-  width: 100%;
-  height: 400px;
-  /* margin-top: 50px; */
-}
-.container .page2 {
-  width: 80%;
-  height: 700px;
-  /* background-color: coral; */
-  margin: auto;
-  display: flex;
-  margin-top: 20px;
-}
-.container .page2 .picture {
-  width: 48%;
-  height: 700px;
-  /* border: 1px solid red; */
-  margin-right: 130px;
-}
-.container .page2 .picture h3 {
-  font-size: 40px;
-  font-family: "Times New Roman", Times, serif;
-  margin-top: 30px;
-}
-.container .page2 .picture p {
-  font-size: 20px;
-  font-family: "Times New Roman", Times, serif;
-  margin-top: 30px;
-}
-.container .page2 .picture img {
-  width: 100%;
-  height: 300px;
-}
-.container .page2 .txt {
-  width: 30%;
-  height: 250px;
-  /* background-color: #4CAF50; */
-  margin-top: 215px;
-}
-.container .page2 .txt p {
-  font-size: 24px;
-}
-.container .page5 {
-  width: 100%;
-  height: 700px;
-  background-image: url("./../img/1.webp");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-}
-.container .page5 .p {
-  width: 800px;
-  height: 300px;
-  /* border: 1px solid red; */
-  margin-left: 50px;
-  padding: 70px;
-}
-.container .page5 .p h3 {
-  color: white;
-  font-size: 30px;
-  font-family: "Times New Roman", Times, serif;
-}
-.container .page5 .p p,
-h3 {
-  color: white;
-  font-size: 30px;
-  font-family: "Times New Roman", Times, serif;
-}
-footer {
-  width: 100%;
-  height: 100px;
-  background-color: rgb(41, 38, 38);
-  display: flex;
   align-items: center;
 }
-footer .right {
-  margin-left: 1200px;
-}
-footer .right .fa-solid {
+.container .banner .text {
   color: white;
+  font-weight: 600;
+  font-size: 36px;
 }
-footer .left {
-  margin-left: 50px;
-  font-family: "Times New Roman", Times, serif;
-  color: white;
+.grid-container {
+  display: flex;
+  gap: 60px;
+  padding: 10px;
+  justify-content: center;
+}
+.grid-item {
+  width: 300px;
+  height: 310px;
+  color: black;
+}
+.card,
+.card_content {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  height: full;
+}
+.card_content {
+  padding: 0 20px;
+  padding-bottom: 20px;
+}
+.cardImg {
+  background: pink;
+  height: 140px;
+  weight: 100%;
+  object-fit: cover;
+}
+.cardBtn {
+  background: #e6ebff;
+  border: 0;
+  height: 28px;
+}
+section {
+  width: 80%;
+  margin: auto;
+  
+  
 }
