@@ -29,9 +29,12 @@ html {
   color: white;
   max-width: 800px;
   text-align: center;
-  top: 40px;
+  top: 235px;
 }
-
+.banner h3{
+  position: absolute;
+  margin-top: -60px;
+}
 
 .bannerimage {
   position: absolute;
